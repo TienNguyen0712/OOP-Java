@@ -7,6 +7,7 @@
 * **[Đối tượng (Object)](#7)**
 * **[Inheritance (Kế thừa)](#4)**
 * **[Encapsulation (Đóng gói)](#6)**
+* **[Polymorphism (Đa hình)](#8)**
 
 <a id="1"><h2> Java là gì?</h2></a>
 Là một ngôn ngữ lập trình, tạo ra vào năm 1995 có hơn 3 tỷ thiết bị chạy Java được sử dụng cho (Mobile, Desktop, Web, Games, ... )
@@ -164,3 +165,6 @@ class Account {
 `static` được sử dụng trong hàm như là cách để diễn tả các giá trị hay phương thức tĩnh và không thể thay đổi thường là các phương thức chính (hàm main) 
 
 [Mục lục](#0)
+
+<a id="8"><h2>Polymorphism (Tính đa hình)</h2></a>
+Một đặc điểm khác của lập trình hướng đối tượng chính là tính đa hình cho phép chương trình có thể thực hiện nhiều thông điệp đến với đối tượng từ nhiều lớp khác nhau 
