@@ -3,6 +3,8 @@
 * **[Java là gì](#1)**
 * **[Tại sao phải dùng Java](#2)**
 * **[Các khái niệm cơ bản](#3)**
+* **[Inheritance (Kế thừa)](#4)**
+
 <a id="1"><h2> Java là gì</h2></a>
 Là một ngôn ngữ lập trình, tạo ra vào năm 1995 có hơn 3 tỷ thiết bị chạy Java được sử dụng cho (Mobile, Desktop, Web, Games, ... )
 <a id="2"><h2> Tại sao phải dùng Java </h2></a>
@@ -39,7 +41,7 @@ Là thành phần được khởi tạo nằm trong Object
 Là thành phần được khởi tạo trong Class và có thể chia sẻ cho các instance nằm trong lớp đó 
 ##### *Variables and Constant (Biến và hàm số)*
 Giá trị có thể thay đổi được gọi là biến và không thể thay đổi được gọi là hàm số
-#### **Inheritance (Kế thừa)**
+<a id="4"><h2>Inheritance (Kế thừa)</h2></a>
 Là kiểu thiết kế trong OOP thừa kế lại các giá trị trong một lớp (Thiết kế hai hoặc nhiều thực thể khác nhau những vẫn có thể chia sẻ các đặc trưng chung). Ta gọi lớp chung là `superclass` các lớp kế thừa lại từ nó thì gọi là `subclasses`. Nhiều lớp có thể kế thừa với nhau. Được biểu diễn bằng dấu mũi tên với phần mũi tên hướng về lớp được thừa kế. Một hệ thống phần mềm được biểu diễn như sau 
 ```
 Phân tích --- Thiết kế --- Coding --- Kiểm tra --- Debugging --- Operation (Bảo trì và tái sử dụng)
