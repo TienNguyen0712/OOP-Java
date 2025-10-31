@@ -50,6 +50,14 @@ Là thành phần được khởi tạo nằm trong Object
 Là thành phần được khởi tạo trong Class và có thể chia sẻ cho các instance nằm trong lớp đó 
 ##### *Variables and Constant (Biến và hàm số)*
 Giá trị có thể thay đổi được gọi là biến và không thể thay đổi được gọi là hàm số
+##### *static*
+Từ khóa `static` chính là code lấy các giá trị ràng buộc mà một class phải tuân theo khi được nạp và Java
+```Java
+static {
+  // Code định nghĩa
+  // Biến lớp và mô tả
+}
+```
 
 [Mục lục](#0)
 
@@ -75,6 +83,13 @@ public <tên class> ( <tham số> ) {
 Là phương thức trả về thông tin của một đối tượng còn được gọi là phương thức `get`
 ##### *Phương thức điều chỉnh (mutator)*
 Là phương thức có thể điều chỉnh hay tạo mới một thuộc tính của đối tượng còn được gọi là phương thức `set`
+##### *Từ khóa `this`*
+Thường được sử dụng để phân biệt dữ liệu định nghĩa trong một class với tham số truyền vào (biến cục bộ) khi thực hiện một phương thức. Hay là tên gọi để đại diện cho chính class đang được gọi tới trong phương thức đang được viết trong chính class đó 
+
+Ngoài ra ta có thể thay đổi các thuộc tính trong một class khi khởi tạo bằng `this` thông qua cú pháp 
+```Java
+this( <Danh sách tham số> )
+```
 
 **Một đối tượng hoàn chỉnh sẽ bao gồm:**
 ```Java
@@ -137,6 +152,8 @@ student1.getName() // Thực hiện phương thức lấy tên đối học sinh
 Là phương thức cho phép xây dựng dữ liệu sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài và chỉ cho phép truy cập từ phương thức. Nhằm dảm bảo sự mạch lạc trong code. Tính đóng gói được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public.
 ##### *Biến cục bộ (Local variable)*
 Là biến được định nghĩa trong phương thức thuộc trong một lớp hay đối tượng. Khi thay đổi giá trị của biến cục bộ trong hàm thì nó chỉ thay đổi giá trị của biến đó trong hàm chứ không thay đổi với biến của đối tượng
+
+Tham số khi truyền vào phương thức thông qua giá trị được đinh nghĩa khi viết trong phương thức, tham số được xét từ trái qua phải, khi truyền giá trị thì phải ứng với tham số đặt trên phương thức và tên của biến truyền vào không được trùng tên với tham số trong phương thức
 ##### *Hàm số lớp (Class Constrants)*
 Là các hàm số chỉ được định nghĩa một lần duy nhất nằm ở phương thức chsnh để có thể chia sẽ cho toàn bộ phương thức trong class. Thông thường ta thường sẽ để private nhưng trong một số trường hợp ta muốn người dùng biết được thông tin hay chỉnh sửa thì ta cũng có thể để chúng thành public
 ```Java
