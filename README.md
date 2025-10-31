@@ -3,7 +3,7 @@
 * **[Java là gì](#1)**
 * **[Tại sao phải dùng Java](#2)**
 * **[Các khái niệm cơ bản](#3)**
-* **[Lớp (Class)](#5)**
+* **[Lớp (Classes)](#5)**
 * **[Inheritance (Kế thừa)](#4)**
 * **[Encapsulation (Đóng gói)](#6)**
 
