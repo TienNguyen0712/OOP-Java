@@ -7,7 +7,7 @@
 * **[Constructor (Bộ khởi tạo)](#5)**
 * **[Encapsulation (Đóng gói)](#6)**
 
-<a id="1"><h2> Java là gì</h2></a>
+<a id="1"><h2> Java là gì?</h2></a>
 Là một ngôn ngữ lập trình, tạo ra vào năm 1995 có hơn 3 tỷ thiết bị chạy Java được sử dụng cho (Mobile, Desktop, Web, Games, ... )
 <a id="2"><h2> Tại sao phải dùng Java </h2></a>
 * Làm việc nhiều thiết bị
