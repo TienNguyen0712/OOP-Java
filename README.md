@@ -87,8 +87,7 @@ class Student {
 }
 ```
 <a id="6"><h2>Encapsulation (Tính đóng gói)</h2></a>
-Là phương thức cho phép xây dựng dữ liệu sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài. Nhằm dảm bảo sự mạch lạc trong code
-. Tính đóng gỏi được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public.
+Là phương thức cho phép xây dựng dữ liệu sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài và chỉ cho phép truy cập từ phương thức. Nhằm dảm bảo sự mạch lạc trong code. Tính đóng gói được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public.
 ##### *Biến cục bộ (Local variable)*
 Là biến được định nghĩa trong phương thức thuộc trong một lớp hay đối tượng. Khi thay đổi giá trị của biến cục bộ trong hàm thì nó chỉ thay đổi giá trị của biến đó trong hàm chứ không thay đổi với biến của đối tượng
 ##### *Hàm số lớp (Class Constrants)*
