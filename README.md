@@ -84,8 +84,8 @@ class Student {
 }
 ```
 <a id="6"><h2>Encapsulation (Tính đóng gói)</h2></a>
-Là phương thức cho phép xây dựng dữ lieuj và phương thức sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài. Nhằm dảm bảo sự mạch lạc trong code
-. Tính đóng gỏi được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public 
+Là phương thức cho phép xây dựng dữ liệu sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài. Nhằm dảm bảo sự mạch lạc trong code
+. Tính đóng gỏi được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public.
     
 
 
