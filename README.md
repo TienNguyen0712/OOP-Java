@@ -64,6 +64,7 @@ public <tên class> ( <tham số> ) {
 Là phương thức trả về thông tin của một đối tượng còn được gọi là phương thức `get`
 ##### *Phương thức điều chỉnh (mutator)*
 Là phương thức có thể điều chỉnh hay tạo mới một thuộc tính của đối tượng còn được gọi là phương thức `set`
+
 **Một đối tượng hoàn chỉnh sẽ bao gồm:**
 ```Java
 class Student {
