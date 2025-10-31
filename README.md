@@ -4,6 +4,7 @@
 * **[Tại sao phải dùng Java](#2)**
 * **[Các khái niệm cơ bản](#3)**
 * **[Lớp (Classes)](#5)**
+* **[Đối tượng (Object)](#7)**
 * **[Inheritance (Kế thừa)](#4)**
 * **[Encapsulation (Đóng gói)](#6)**
 
@@ -95,6 +96,39 @@ class Student {
       return age;
   }
 }
+```
+
+[Mục lục](#0)
+
+<a id="7"><h2>Đối tượng (Object)</h2></a>
+Đối tượng là sản phẩm được tạo ra khi khai báo một class chúng được định nghĩa bởi các dữ liệu được cài đặt trong bộ khởi tạo thuộc class đó và thực hiện giao tiếp thông qua các message với nhau, là một thực thể cụ thể.
+
+Để truy cập một phương thức được định nghĩa trong class thông qua một đối tượng ta sử dụng toán tử `.`
+
+**Một đối tượng hoàn chỉnh sẽ bao gồm:**
+```Java
+class Student {
+  // Dữ liệu
+  private String name;
+  private int age;
+  // Bộ khởi tạo
+  public Student(String studentName, int studentAge){
+        name = studentName;
+        age = studentAge;
+  }
+  // Trả về tên học sinh
+  public String getName(){
+      return name;
+  }
+  // Trả về tuổi học sinh
+  public String getAge(){
+      return age;
+  }
+}
+
+// Hàm main ta khởi tạo một đối tượng như sau
+Student student1 = new Student("Tên học sinh thứ nhất", 12) // Đây là một đối tượng
+student1.getName() // Thực hiện phương thức lấy tên đối học sinh
 ```
 
 [Mục lục](#0)
