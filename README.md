@@ -4,6 +4,8 @@
 * **[Tại sao phải dùng Java](#2)**
 * **[Các khái niệm cơ bản](#3)**
 * **[Inheritance (Kế thừa)](#4)**
+* **[Constructor (Bộ khởi tạo)](#5)**
+* **[Encapsulation (Đóng gói)](#6)**
 
 <a id="1"><h2> Java là gì</h2></a>
 Là một ngôn ngữ lập trình, tạo ra vào năm 1995 có hơn 3 tỷ thiết bị chạy Java được sử dụng cho (Mobile, Desktop, Web, Games, ... )
@@ -46,6 +48,45 @@ Là kiểu thiết kế trong OOP thừa kế lại các giá trị trong một 
 ```
 Phân tích --- Thiết kế --- Coding --- Kiểm tra --- Debugging --- Operation (Bảo trì và tái sử dụng)
 ```
+<a id="5"><h2>Lớp (Classes)</h2></a>
+##### *Constructor (Bộ khởi tạo)*
+Phương thức đầu tiên định nghĩa lên một lớp được gọi là bộ khởi tạo. Một `constructor` là một phương thức đặc biệt khi một đối tượng mới được tạo nó sẽ được gọi đến, bộ khởi tạo sẽ không có giá trị trả về, phạm vi truy cập không phải lúc nào cũng là `public` nhưng việc không `public` cũng ít khi được sử dụng. Nhưng lại rất phổ biến việc truyền vào nhiều tham số ở lớp khởi tạo. Khi ta truyền tham số vào trong hàm khởi tạo thì nếu khởi tạo một đối tượng mới ta bắt buộc phải truyền tham số ứng với số lượng tham số truyền vào hàm khởi tạo của đối tượng đó nêu không sẽ gây ra lỗi thiếu tham số 
+
+Cú pháp để thực hiện việc khởi tạo
+```Java
+public <tên class> ( <tham số> ) {
+  < mệnh đề>
+}
+```
+##### *Phương thức truy cập (accesstor)*
+Là phương thức trả về thông tin của một đối tượng còn được gọi là phương thức `get`
+##### *Phương thức điều chỉnh (mutator)*
+Là phương thức có thể điều chỉnh hay tạo mới một thuộc tính của đối tượng còn được gọi là phương thức `set`
+**Một đối tượng hoàn chỉnh sẽ bao gồm:**
+```Java
+class Student {
+  // Dữ liệu
+  private String name;
+  private int age;
+  // Bộ khởi tạo
+  public Student(String studentName, int studentAge){
+        name = studentName;
+        age = studentAge;
+  }
+  // Trả về tên học sinh
+  public String getName(){
+      return name;
+  }
+  // Trả về tuổi học sinh
+  public String getAge(){
+      return age;
+  }
+}
+```
+<a id="6"><h2>Encapsulation (Tính đóng gói)</h2></a>
+Là phương thức cho phép xây dựng dữ lieuj và phương thức sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài. Nhằm dảm bảo sự mạch lạc trong code
+. Tính đóng gỏi được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public 
+    
 
 
 
