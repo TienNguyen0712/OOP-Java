@@ -1,13 +1,17 @@
 ### Bài tập Phương pháp lập trình hướng đối tượng
-#### **Java là gì**
+#### **Mục lục**
+* **[Java là gì](#1)**
+* **[Tại sao phải dùng Java](#2)**
+* **[Các khái niệm cơ bản](#3)**
+<a id="1"><h2> Java là gì</h2></a>
 Là một ngôn ngữ lập trình, tạo ra vào năm 1995 có hơn 3 tỷ thiết bị chạy Java được sử dụng cho (Mobile, Desktop, Web, Games, ... )
-#### **Tại sao sử dụng Java**
+<a id="2"><h2> Tại sao phải dùng Java </h2></a>
 * Làm việc nhiều thiết bị
 * Một trong những ngôn ngữ phổ bién
 * Cộng đồng lớn cho dev
 * Java viết dựa trên OOP đưa ra một cấu trúc gọn gàng và chấp nhận việc tái sử dụng với các dev giá tri thấo 
 * Giống với C++ và C# dễ dàng để có thể đổi qua Java
-#### **Các khái niệm cơ bản**
+<a id="3"><h2> Các khái niệm cơ bản </h2></a>
 ##### *Lớp (Classes)*
 Là một tập hợp nhiều đối tượng được viết trong chương trình, lớp mô tả một lớp có thể và không thể làm gì được
 Mỗi đối tượng được xem là một `instance` của class và chỉ thuộc duy nhất một class. Ví dụ ta có 2 đối tượng Moto1 và Moto2 thì hai đối tượng này chỉ thuộc duy nhất một class Bicycle, một khi Class được định nghĩa nó có thể tạo nhiều instance đối tượng phụ thuộc theo chương trình muốn cài đặt 
