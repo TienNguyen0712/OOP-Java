@@ -88,7 +88,15 @@ class Student {
 <a id="6"><h2>Encapsulation (Tính đóng gói)</h2></a>
 Là phương thức cho phép xây dựng dữ liệu sao cho tách biệt với mỗi phần với mỗi lớp. Giúp bảo toàn dữ liệu từ truy cập bên ngoài. Nhằm dảm bảo sự mạch lạc trong code
 . Tính đóng gỏi được thể hiện ở việc kiểm soát các mức độ truy cập thông qua từ khóa `public` và `private` giúp đảm bảo tính an toàn và tái sử dụng khi thực hiện chương trình với dâu (-) biểu diễn cho private và dấu (+) biểu diễn cho public.
-    
-
+##### *Biến cục bộ (Local variable)*
+Là biến được định nghĩa trong phương thức thuộc trong một lớp hay đối tượng. Khi thay đổi giá trị của biến cục bộ trong hàm thì nó chỉ thay đổi giá trị của biến đó trong hàm chứ không thay đổi với biến của đối tượng
+##### *Hàm số lớp (Class Constrants)*
+Là các hàm số chỉ được định nghĩa một lần duy nhất nằm ở phương thức chsnh để có thể chia sẽ cho toàn bộ phương thức trong class. Thông thường ta thường sẽ để private nhưng trong một số trường hợp ta muốn người dùng biết được thông tin hay chỉnh sửa thì ta cũng có thể để chúng thành public
+```Java
+class Account {
+  private static final double FEE = 0.5 // Đây chính là một hàm số và được sử dụng cho nhiều phương thức khác trong hàm như (Rút tiền thì có thể trừ FEE)
+}
+```
+`static` được sử dụng trong hàm như là cách để diễn tả các giá trị hay phương thức tĩnh và không thể thay đổi thường là các phương thức chính (hàm main) 
 
 
