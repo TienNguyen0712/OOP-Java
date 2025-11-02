@@ -8,6 +8,7 @@
 * **[Inheritance (Kế thừa)](#4)**
 * **[Encapsulation (Đóng gói)](#6)**
 * **[Polymorphism (Đa hình)](#8)**
+* **[Abstraction (Trừu tượng hóa)](#9)**
 
 <a id="1"><h2> Java là gì?</h2></a>
 Là một ngôn ngữ lập trình, tạo ra vào năm 1995 có hơn 3 tỷ thiết bị chạy Java được sử dụng cho (Mobile, Desktop, Web, Games, ... )
@@ -59,6 +60,11 @@ static {
   // Biến lớp và mô tả
 }
 ```
+##### *Mức độ truy xuất*
+* **public**: Có thể truy cập mọi nơi trong cũng package và ngoài package  
+* **private**: Chỉ trong chính class đó, không thể truy cập từ bất kỳ class nào khác, kể cả class con
+* **protect**: Có thể truy cập trong cùng package và trong class con kể cả khác package. Cho phép thừa kế và mở rộng nhưng vẫn hạn chế bên ngoài can thiệp
+* **default**: Mặc định **private**
 
 [Mục lục](#0)
 
@@ -67,7 +73,11 @@ Là kiểu thiết kế trong OOP thừa kế lại các giá trị trong một 
 ```
 Phân tích --- Thiết kế --- Coding --- Kiểm tra --- Debugging --- Operation (Bảo trì và tái sử dụng)
 ```
+Ta sử dụng từ khóa `protected` để có thể thực hiện việc thừa kế dữ liệu vừa đảm bảo quyền truy cập từ phương thức và cả các lớp thừa kế sau đó ta sử dụng dấu (#) để có thể thể hiện từ khóa đó trên UML
 
+Từ khóa `instanceof` được sử dung dể xác định xem nó có thuộc lớp không
+
+Để có thể định nghĩa lớp kế thừa ta dùng từ khóa `extends` 
 [Mục lục](#0)
 
 <a id="5"><h2>Lớp (Classes)</h2></a>
@@ -168,3 +178,10 @@ class Account {
 
 <a id="8"><h2>Polymorphism (Tính đa hình)</h2></a>
 Một đặc điểm khác của lập trình hướng đối tượng chính là tính đa hình cho phép chương trình có thể thực hiện nhiều thông điệp đến với đối tượng từ nhiều lớp khác nhau 
+
+Các thông điệp được gửi thông qua tính đa hình được gọi là `polymorphic message` bởi vì chúng phụ thuộc vào đối tượng gọi tới, phương thức khác. Tính đa hình giúp chúng ta viết code một cách dễ dàng và tái sử dụng code
+
+##### *Overrides (Ghi đè)*
+Là cách mà một lớp khác gọi lại một phương thức đã tồn tại nhưng với cách thức khác
+
+<a id="9"><h2>Tính trừu tượng hóa (Abtraction)</h2></a>
