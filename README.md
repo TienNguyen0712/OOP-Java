@@ -185,7 +185,7 @@ class Account {
   private static final double FEE = 0.5 // Đây chính là một hàm số và được sử dụng cho nhiều phương thức khác trong hàm như (Rút tiền thì có thể trừ FEE)
 }
 ```
-`static` được sử dụng trong hàm như là cách để diễn tả các giá trị hay phương thức tĩnh và không thể thay đổi thường là các phương thức chính (hàm main) 
+`static` được sử dụng trong hàm như là cách để diễn tả các giá trị hay pương thức tĩnh và không thể thay đổi thường là các phương thức chính (hàm main) 
 
 [Mục lục](#0)
 
@@ -198,3 +198,14 @@ Các thông điệp được gửi thông qua tính đa hình được gọi là
 Là cách mà một lớp khác gọi lại một phương thức đã tồn tại nhưng với cách thức khác
 
 <a id="9"><h2>Abstraction (Tính trừu tượng hóa)</h2></a>
+Là quá trình ẩn đi chi tiết cài đặt phức tạp, chỉ hiển thị những gì cần thiết cho người dùng. Nói cách khách, nó giúp tập trung vào cái gì chứ không phải làm như thế nào. Tính trừu tượng được thể hiện bởi `abtract class(Lớp trừu tượng)` và `interface (phương thức trừu tượng)`
+* `abtract class`: Là lớp được khai báo với từ khóa `abstract` dùng để định nghĩa khung cho các lớp con. Lớp này không thể tạo đối tượng trực tiếp mà chỉ có thể kế thừa
+* `interface`: Là một bản thiết kế gồm các phương thức trừu tượng mà lớp cài đặt phải tuân theo để có thể sử dụng các phương thức được khai báo trong interface ta sử dụng từ khóa `implements` phương thức đó rồi viết logic và đương nhiên interface này cũng có thẻ kết thừa interface khác
+#### *So sánh giữa `abstract class` và `interface`*
+* Từ khóa: `abstract class` | `interface`
+* Kế thừa: `extends` | `implements`
+* Có thể chứa biến đối tượng: Có | Chỉ hằng số
+* Có thể có bộ khởi tạo: Có | Không
+* Có thể có phương thức có thân: Có | Chỉ `default` và `static`
+* Mức độ trừu tượng: Một phần | Hoàn toàn
+* Dùng khi: Các lớp có quan hệ cùng loại | Các lớp khác loại nhưng cùng hành vi
