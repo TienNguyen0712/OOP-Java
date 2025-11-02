@@ -1,6 +1,6 @@
 ### Bài tập Phương pháp lập trình hướng đối tượng
 <a id="0"><h2>Mục lục</h2></a>
-* **[Java là gì](#1)**
+* **[Java là gì?](#1)**
 * **[Tại sao phải dùng Java](#2)**
 * **[Các khái niệm cơ bản](#3)**
 * **[Lớp (Classes)](#5)**
