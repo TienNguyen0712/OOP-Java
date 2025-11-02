@@ -197,6 +197,8 @@ Các thông điệp được gửi thông qua tính đa hình được gọi là
 ##### *Overrides (Ghi đè)*
 Là cách mà một lớp khác gọi lại một phương thức đã tồn tại nhưng với cách thức khác
 
+[Mục lục](#0)
+
 <a id="9"><h2>Abstraction (Tính trừu tượng hóa)</h2></a>
 Là quá trình ẩn đi chi tiết cài đặt phức tạp, chỉ hiển thị những gì cần thiết cho người dùng. Nói cách khách, nó giúp tập trung vào cái gì chứ không phải làm như thế nào. Tính trừu tượng được thể hiện bởi `abtract class(Lớp trừu tượng)` và `interface (phương thức trừu tượng)`
 * `abtract class`: Là lớp được khai báo với từ khóa `abstract` dùng để định nghĩa khung cho các lớp con. Lớp này không thể tạo đối tượng trực tiếp mà chỉ có thể kế thừa
@@ -209,3 +211,5 @@ Là quá trình ẩn đi chi tiết cài đặt phức tạp, chỉ hiển thị
 * Có thể có phương thức có thân: Có | Chỉ `default` và `static`
 * Mức độ trừu tượng: Một phần | Hoàn toàn
 * Dùng khi: Các lớp có quan hệ cùng loại | Các lớp khác loại nhưng cùng hành vi
+
+[Mục lục](#0)
