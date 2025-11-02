@@ -53,13 +53,26 @@ Là thành phần được khởi tạo trong Class và có thể chia sẻ cho 
 ##### *Variables and Constant (Biến và hàm số)*
 Giá trị có thể thay đổi được gọi là biến và không thể thay đổi được gọi là hàm số
 ##### *static*
-Từ khóa `static` chính là code lấy các giá trị ràng buộc mà một class phải tuân theo khi được nạp và Java
+Từ khóa `static` dùng để chỉ rằng đây là thành phần (biến, phương thức, khối lệnh hoặc lớp con) thuộc về lớp chúng không thuộc về đối tượng
 ```Java
 static {
   // Code định nghĩa
   // Biến lớp và mô tả
 }
 ```
+* **Biến static**:  
+  * Dùng chung cho tất cả các đối tượng của lớp
+  * Chỉ được tạo một lần trong bộ nhớ khi chương trình chạy
+  * Thường dùng để lưu giá trị chung, đếm số đối tượng
+* **Phương thức static**:  
+  * Có thể gọi mà không cần tạo đối tượng
+  * Chỉ truy cấp được các thành phần ststic khác (không thể truy cấp biến non-static) 
+* **Khối static**
+  * Dùng để khởi tạo giá trị cho biến static
+  * Được chạy chỉ một lần khi lớp được nạp vào bộ nhớ
+* **Lớp lồng static**
+  * Là lớp con được khai báo static bên trong lớp khác
+  * Không thẻ truy cập trực tiếp biến non-static của lớp khác  
 ##### *Mức độ truy xuất*
 * **public**: Có thể truy cập mọi nơi trong cũng package và ngoài package  
 * **private**: Chỉ trong chính class đó, không thể truy cập từ bất kỳ class nào khác, kể cả class con
@@ -77,7 +90,7 @@ Ta sử dụng từ khóa `protected` để có thể thực hiện việc thừ
 
 Từ khóa `instanceof` được sử dung dể xác định xem nó có thuộc lớp không
 
-Để có thể định nghĩa lớp kế thừa ta dùng từ khóa `extends` 
+Để có thể định nghĩa lớp kế thừa ta dùng từ khóa `extends` kế thừa lớp cha
 [Mục lục](#0)
 
 <a id="5"><h2>Lớp (Classes)</h2></a>
@@ -184,4 +197,4 @@ Các thông điệp được gửi thông qua tính đa hình được gọi là
 ##### *Overrides (Ghi đè)*
 Là cách mà một lớp khác gọi lại một phương thức đã tồn tại nhưng với cách thức khác
 
-<a id="9"><h2>Tính trừu tượng hóa (Abtraction)</h2></a>
+<a id="9"><h2>Abstraction (Tính trừu tượng hóa)</h2></a>
