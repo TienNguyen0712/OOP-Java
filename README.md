@@ -63,7 +63,7 @@ static {
 ##### *Mức độ truy xuất*
 * **public**: Có thể truy cập mọi nơi trong cũng package và ngoài package  
 * **private**: Chỉ trong chính class đó, không thể truy cập từ bất kỳ class nào khác, kể cả class con
-* **protect**: Có thể truy cập trong cùng package và trong class con kể cả khác package. Cho phép thừa kế và mở rộng nhưng vẫn hạn chế bên ngoài can thiệp
+* **protected**: Có thể truy cập trong cùng package và trong class con kể cả khác package. Cho phép thừa kế và mở rộng nhưng vẫn hạn chế bên ngoài can thiệp
 * **default**: Mặc định **private**
 
 [Mục lục](#0)
