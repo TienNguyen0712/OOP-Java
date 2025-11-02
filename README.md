@@ -90,7 +90,8 @@ Ta sử dụng từ khóa `protected` để có thể thực hiện việc thừ
 
 Từ khóa `instanceof` được sử dung dể xác định xem nó có thuộc lớp không
 
-Để có thể định nghĩa lớp kế thừa ta dùng từ khóa `extends` kế thừa lớp cha
+Để có thể định nghĩa lớp kế thừa ta dùng từ khóa `extends` kế thừa lớp cha ta sử dụng từ khóa `super()` để đại diện bộ khởi tạo được tạo trong lớp cha
+
 [Mục lục](#0)
 
 <a id="5"><h2>Lớp (Classes)</h2></a>
